@@ -1,13 +1,15 @@
 @import "tailwindcss";
 @import "./common.css";
+@import "./site.css";
 
 @theme {
-  --color-primary: #184734;
-  --color-secondary: #5C8019;
+  --color-primary: #ff7a00;
+  --color-secondary: #3cbeee;
+  --color-ink: #021016;
   --color-black: #000000;
   --color-white: #ffffff;
-  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Libre Baskerville", ui-serif, Georgia, serif;
+  --font-sans: "Lora", ui-serif, Georgia, serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
 }
 
 html {
@@ -17,5 +19,4 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  color: var(--color-black);
 }

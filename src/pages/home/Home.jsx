@@ -1,12 +1,20 @@
+import { useEffect } from 'react'
+import HeroCarousel from './HeroCarousel.jsx'
+import FeaturedDestinations from './FeaturedDestinations.jsx'
+import ChardhamYatra from './ChardhamYatra.jsx'
+import Testimonials from './Testimonials.jsx'
+
 export default function HomePage() {
+  useEffect(() => {
+    document.title = 'Heaven Uttarakhand Travels — Home: Pilgrimage & Adventure Tours in Uttarakhand'
+  }, [])
+
   return (
-    <section className="mx-auto max-w-5xl px-6 py-16">
-      <h1 className="font-display text-4xl font-semibold tracking-tight text-primary">
-        Home
-      </h1>
-      <p className="mt-3 text-black/70">
-        Welcome to Travel With Baba. Explore our services and learn more about us.
-      </p>
-    </section>
+    <>
+      <HeroCarousel />
+      <FeaturedDestinations />
+      <ChardhamYatra />
+      <Testimonials />
+    </>
   )
 }
