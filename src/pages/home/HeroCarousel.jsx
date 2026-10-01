@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { heroKicker, heroSlides } from '../../data/siteContent.js'
-import { ArrowDownIcon } from '../../components/ui/Icons.jsx'
+import { FiArrowDown } from 'react-icons/fi'
 
 export default function HeroCarousel() {
   const [active, setActive] = useState(0)
@@ -51,7 +51,7 @@ export default function HeroCarousel() {
       </div>
       <button type="button" className="hero-next" onClick={showNext} aria-label="Next slide">
         <span className="arrow-bounce">
-          <ArrowDownIcon />
+          <FiArrowDown />
         </span>
       </button>
     </section>

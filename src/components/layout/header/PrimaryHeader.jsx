@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { contact } from '../../../data/siteContent.js'
+import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
+import { FaWhatsapp } from 'react-icons/fa'
 import PrimaryMenu, { MenuToggle } from './PrimaryMenu.jsx'
 
 export default function PrimaryHeader() {
@@ -12,7 +15,7 @@ export default function PrimaryHeader() {
   }, [location.pathname])
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 100)
+    const onScroll = () => setScrolled(window.scrollY > 80)
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
@@ -20,9 +23,31 @@ export default function PrimaryHeader() {
 
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
+      <div className="header-top">
+        <div className="header-top-inner">
+          <p className="header-place">
+            <FiMapPin />
+            <span>{contact.address}</span>
+          </p>
+          <div className="header-top-actions">
+            <a href={contact.phoneHref}>
+              <FiPhone />
+              {contact.phone}
+            </a>
+            <a href={`mailto:${contact.email}`}>
+              <FiMail />
+              {contact.email}
+            </a>
+            <a className="header-whatsapp" href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
       <nav className="site-nav" aria-label="Primary">
         <Link to="/" className="brand" onClick={() => setOpen(false)}>
-          <img src="/images/logo.jpeg" alt="Heaven Uttarakhand" />
+          <img src="/images/himayah/logo.png" alt="Himayah Tour And Travels" />
         </Link>
         <MenuToggle open={open} onClick={() => setOpen((value) => !value)} />
         <PrimaryMenu open={open} onNavigate={() => setOpen(false)} />

@@ -1,14 +1,19 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { destinations, chardhamLinks } from '../../../data/siteContent.js'
-import { ChevronDownIcon, MenuIcon } from '../../ui/Icons.jsx'
-import SocialRow from './SocialRow.jsx'
+import { contact, packageGroups, serviceLinks } from '../../../data/siteContent.js'
+import { FiChevronDown, FiMenu, FiPhone, FiX } from 'react-icons/fi'
+import { FaWhatsapp } from 'react-icons/fa'
 
-function Dropdown({ label, items }) {
+function Dropdown({ label, items, groups, align, onNavigate }) {
   const [open, setOpen] = useState(false)
 
+  const close = () => {
+    setOpen(false)
+    onNavigate()
+  }
+
   return (
-    <div className="nav-dropdown">
+    <div className={`nav-dropdown ${open ? 'is-open' : ''}`}>
       <button
         type="button"
         className="nav-link"
@@ -16,20 +21,31 @@ function Dropdown({ label, items }) {
         onClick={() => setOpen((value) => !value)}
       >
         {label}
-        <ChevronDownIcon />
+        <FiChevronDown />
       </button>
-      <ul className={`dropdown-panel ${open ? 'is-open' : ''}`}>
-        {items.map((item) => (
-          <li key={item.href}>
-            <NavLink
-              to={item.href}
-              className={`dropdown-link ${item.bold ? 'is-bold' : ''}`}
-              onClick={() => setOpen(false)}
-            >
-              {item.label}
-            </NavLink>
-          </li>
-        ))}
+      <ul className={`dropdown-panel ${groups ? 'is-mega' : ''} ${align === 'end' ? 'is-end' : ''} ${open ? 'is-open' : ''}`}>
+        {groups
+          ? groups.map((group) => (
+              <li key={group.heading} className="dropdown-group">
+                <p className="dropdown-heading">{group.heading}</p>
+                <ul>
+                  {group.items.map((item) => (
+                    <li key={item.href}>
+                      <NavLink to={item.href} className="dropdown-link" onClick={close}>
+                        {item.label}
+                      </NavLink>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))
+          : items.map((item) => (
+              <li key={item.href}>
+                <NavLink to={item.href} className="dropdown-link" onClick={close}>
+                  {item.label}
+                </NavLink>
+              </li>
+            ))}
       </ul>
     </div>
   )
@@ -43,18 +59,27 @@ export default function PrimaryMenu({ open, onNavigate }) {
           Home
         </NavLink>
         <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
-          About
+          About Us
         </NavLink>
-        <Dropdown label="Destination" items={destinations} />
-        <Dropdown label="Chardham yatra" items={chardhamLinks} />
-        <NavLink to="/packages" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
-          Packages
+        <Dropdown label="Our Services" items={serviceLinks} onNavigate={onNavigate} />
+        <Dropdown label="Tour Packages" groups={packageGroups} align="end" onNavigate={onNavigate} />
+        <NavLink to="/testimonials" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
+          Testimonials
         </NavLink>
         <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
-          Contact
+          Contact Us
         </NavLink>
       </div>
-      <SocialRow />
+      <div className="nav-mobile-contact">
+        <a href={contact.phoneHref}>
+          <FiPhone />
+          {contact.phone}
+        </a>
+        <a className="header-whatsapp" href={contact.whatsapp} target="_blank" rel="noopener noreferrer">
+          <FaWhatsapp />
+          WhatsApp
+        </a>
+      </div>
     </div>
   )
 }
@@ -68,7 +93,7 @@ export function MenuToggle({ open, onClick }) {
       aria-expanded={open}
       onClick={onClick}
     >
-      <MenuIcon />
+      {open ? <FiX /> : <FiMenu />}
     </button>
   )
 }

@@ -1,20 +1,38 @@
 import { useEffect } from 'react'
 import HeroCarousel from './HeroCarousel.jsx'
-import FeaturedDestinations from './FeaturedDestinations.jsx'
-import ChardhamYatra from './ChardhamYatra.jsx'
+import PlanYourTrip from './PlanYourTrip.jsx'
+import CardCarousel from './CardCarousel.jsx'
+import ServicesSection from './ServicesSection.jsx'
+import AboutBand from './AboutBand.jsx'
 import Testimonials from './Testimonials.jsx'
+import ContactEnquiry from './ContactEnquiry.jsx'
+import { activityCards, destinationCards } from '../../data/siteContent.js'
 
 export default function HomePage() {
   useEffect(() => {
-    document.title = 'Heaven Uttarakhand Travels — Home: Pilgrimage & Adventure Tours in Uttarakhand'
+    document.title = 'Himayah Tour And Travels - Hotel Booking in Srinagar, Flight Booking India'
   }, [])
 
   return (
     <>
       <HeroCarousel />
-      <FeaturedDestinations />
-      <ChardhamYatra />
+      <PlanYourTrip />
+      <CardCarousel
+        eyebrow="Packages by Destination"
+        title="Kashmir and Himachal"
+        lead="Gulmarg, Pahalgam, Srinagar, Sonamarg, Budgam, and Parwanoo."
+        items={destinationCards}
+      />
+      <ServicesSection />
+      <CardCarousel
+        eyebrow="Packages by Activity"
+        title="Choose how you travel"
+        lead="Sightseeing, skiing, riding, boating, camping, trekking, and angling."
+        items={activityCards}
+      />
+      <AboutBand />
       <Testimonials />
+      <ContactEnquiry />
     </>
   )
 }

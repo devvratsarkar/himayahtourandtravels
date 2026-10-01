@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
-import { ArrowUpIcon, WhatsAppIcon } from '../ui/Icons.jsx'
+import { contact } from '../../data/siteContent.js'
+import { FiArrowUp } from 'react-icons/fi'
+import { FaWhatsapp } from 'react-icons/fa'
 
 export default function FloatingActions() {
   const [visible, setVisible] = useState(false)
@@ -15,13 +17,13 @@ export default function FloatingActions() {
     <>
       <a
         className={`float-btn float-btn--whatsapp ${visible ? 'is-visible' : ''}`}
-        href="https://wa.me/919410380388"
+        href={contact.whatsapp}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
         title="Chat on WhatsApp"
       >
-        <WhatsAppIcon />
+        <FaWhatsapp />
       </a>
       <button
         type="button"
@@ -29,7 +31,7 @@ export default function FloatingActions() {
         aria-label="Back to top"
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
-        <ArrowUpIcon />
+        <FiArrowUp />
       </button>
     </>
   )
