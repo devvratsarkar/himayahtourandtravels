@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { contact, packageGroups, serviceLinks } from '../../../data/siteContent.js'
+import { contact, packageGroups } from '../../../data/siteContent.js'
 import { FiChevronDown, FiMenu, FiPhone, FiX } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -61,7 +61,6 @@ export default function PrimaryMenu({ open, onNavigate }) {
         <NavLink to="/about" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
           About Us
         </NavLink>
-        <Dropdown label="Our Services" items={serviceLinks} onNavigate={onNavigate} />
         <Dropdown label="Tour Packages" groups={packageGroups} align="end" onNavigate={onNavigate} />
         <NavLink to="/testimonials" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
           Testimonials
