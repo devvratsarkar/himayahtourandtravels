@@ -63,6 +63,7 @@ a {
 .header-top {
   background: #072b56;
   color: #fff;
+  border-bottom: 2px solid #a57d2f;
 }
 
 .header-top-inner {
@@ -87,9 +88,16 @@ a {
 
 .header-place {
   margin: 0;
-  color: rgba(255, 255, 255, 0.86);
-  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.8rem;
+  font-weight: 500;
   line-height: 1.3;
+}
+
+.header-place svg,
+.header-top-actions a svg {
+  flex-shrink: 0;
+  color: #e8d5a3;
 }
 
 .header-top-actions {
@@ -99,8 +107,14 @@ a {
 
 .header-top-actions a {
   color: #fff;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
+  font-weight: 500;
   text-decoration: none;
+}
+
+.header-top-actions a + a:not(.header-whatsapp) {
+  padding-left: 0.85rem;
+  border-left: 1px solid rgba(232, 213, 163, 0.35);
 }
 
 .header-top-actions a:hover {
@@ -124,7 +138,7 @@ a {
 }
 
 .brand img {
-  height: 74px;
+  height: 64px;
   width: auto;
 }
 
@@ -167,16 +181,16 @@ a {
   position: relative;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 0.35rem;
   margin-right: 0;
   padding: 13px 0;
   border: 0;
   border-bottom: 1px solid #f1f1f1;
   background: transparent;
-  color: #072b56;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
+  color: #1c3f66;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
   text-decoration: none;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -190,6 +204,7 @@ a {
 }
 
 .nav-link svg {
+  font-size: 0.9em;
   transition: transform 0.2s ease;
 }
 
@@ -208,7 +223,7 @@ a {
 .nav-mobile-contact a {
   color: #072b56;
   font-size: 0.92rem;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -299,7 +314,7 @@ a {
     padding: 0.35rem 0;
   }
 
-  .brand img { height: 88px; }
+  .brand img { height: 76px; }
 
   .nav-collapse {
     display: flex;
@@ -319,10 +334,10 @@ a {
 
   .nav-link {
     margin-right: 0;
-    padding: 1.15rem 0.7rem;
+    padding: 0.9rem 0.85rem;
     border-bottom: 0;
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .nav-link.is-active::after {
@@ -1034,14 +1049,20 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  margin-left: 0.15rem;
   padding: 0.28rem 0.7rem;
+  border-left: 0;
   border-radius: 999px;
   background: #25d366;
   color: #fff !important;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
   text-decoration: none;
+}
+
+.header-top-actions .header-whatsapp svg {
+  color: #fff;
 }
 
 .header-whatsapp:hover {
