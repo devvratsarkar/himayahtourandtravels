@@ -3,13 +3,13 @@
 @import "./site.css";
 
 @theme {
-  --color-primary: #ff7a00;
-  --color-secondary: #3cbeee;
-  --color-ink: #021016;
+  --color-primary: #8a6420;
+  --color-secondary: #2a6f9e;
+  --color-ink: #072b56;
   --color-black: #000000;
   --color-white: #ffffff;
-  --font-sans: "Lora", ui-serif, Georgia, serif;
-  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
 
 html {

@@ -5,8 +5,8 @@ html {
 body {
   margin: 0;
   background: #fff;
-  color: #666;
-  font-family: "Lora", Georgia, serif;
+  color: #3e4e5c;
+  font-family: "Manrope", ui-sans-serif, system-ui, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   overflow-x: hidden;
@@ -52,16 +52,16 @@ a {
   top: 0;
   z-index: 1020;
   background: #fff;
-  box-shadow: 0 1px 0 rgba(2, 16, 22, 0.06);
+  box-shadow: 0 1px 0 rgba(7, 43, 86, 0.06);
   transition: box-shadow 0.3s ease;
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 8px 24px rgba(2, 16, 22, 0.08);
+  box-shadow: 0 8px 24px rgba(7, 43, 86, 0.08);
 }
 
 .header-top {
-  background: #021016;
+  background: #072b56;
   color: #fff;
 }
 
@@ -104,7 +104,7 @@ a {
 }
 
 .header-top-actions a:hover {
-  color: #ff7a00;
+  color: #e8d5a3;
 }
 
 .site-nav {
@@ -124,7 +124,7 @@ a {
 }
 
 .brand img {
-  height: 52px;
+  height: 74px;
   width: auto;
 }
 
@@ -136,9 +136,9 @@ a {
   width: 42px;
   height: 42px;
   padding: 0;
-  color: #ff7a00;
-  background: #fff7f0;
-  border: 1px solid #ffd7b5;
+  color: #8a6420;
+  background: #f7f3ea;
+  border: 1px solid #e4d3ae;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -173,7 +173,7 @@ a {
   border: 0;
   border-bottom: 1px solid #f1f1f1;
   background: transparent;
-  color: #021016;
+  color: #072b56;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -186,7 +186,7 @@ a {
 .nav-link.is-active,
 .nav-dropdown:hover > .nav-link,
 .nav-dropdown:focus-within > .nav-link {
-  color: #ff7a00;
+  color: #8a6420;
 }
 
 .nav-link svg {
@@ -206,7 +206,7 @@ a {
 }
 
 .nav-mobile-contact a {
-  color: #021016;
+  color: #072b56;
   font-size: 0.92rem;
   font-weight: 600;
   text-decoration: none;
@@ -248,8 +248,8 @@ a {
 .dropdown-link:hover,
 .dropdown-link:focus-visible,
 .dropdown-link.active {
-  background: #fff4eb;
-  color: #ff7a00;
+  background: #f7f3ea;
+  color: #8a6420;
 }
 
 .social-row {
@@ -267,13 +267,13 @@ a {
   justify-content: center;
   border-radius: 50%;
   background: #ededed;
-  color: #ff7a00;
+  color: #8a6420;
   text-decoration: none;
   transition: background 0.35s ease, color 0.35s ease;
 }
 
 .social-btn:hover {
-  background: #ff7a00;
+  background: #072b56;
   color: #fff;
 }
 
@@ -299,7 +299,7 @@ a {
     padding: 0.35rem 0;
   }
 
-  .brand img { height: 58px; }
+  .brand img { height: 88px; }
 
   .nav-collapse {
     display: flex;
@@ -333,7 +333,7 @@ a {
     bottom: 0.7rem;
     height: 2px;
     border-radius: 2px;
-    background: #ff7a00;
+    background: #a57d2f;
   }
 
   .nav-mobile-contact { display: none; }
@@ -348,8 +348,8 @@ a {
     z-index: 30;
     margin: 0;
     background: #fff;
-    border: 1px solid rgba(2, 16, 22, 0.06);
-    box-shadow: 0 16px 40px rgba(2, 16, 22, 0.12);
+    border: 1px solid rgba(7, 43, 86, 0.06);
+    box-shadow: 0 16px 40px rgba(7, 43, 86, 0.12);
     visibility: hidden;
     opacity: 0;
     transform: translateY(8px);
@@ -382,7 +382,7 @@ a {
   position: relative;
   height: 45vh;
   overflow: hidden;
-  background: #021016;
+  background: #072b56;
 }
 
 @media (min-width: 576px) {
@@ -436,7 +436,7 @@ a {
   z-index: 2;
   display: flex;
   align-items: center;
-  background: linear-gradient(90deg, rgba(2, 16, 22, 0.62) 0%, rgba(2, 16, 22, 0.28) 46%, rgba(2, 16, 22, 0.05) 72%);
+  background: linear-gradient(90deg, rgba(7, 43, 86, 0.62) 0%, rgba(7, 43, 86, 0.28) 46%, rgba(7, 43, 86, 0.05) 72%);
 }
 
 .hero-copy {
@@ -455,8 +455,8 @@ a {
 
 .hero-kicker {
   margin: 0 0 0.4rem;
-  color: #ff7a00;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #e8d5a3;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -468,7 +468,7 @@ a {
 .hero-title {
   margin: 0;
   color: #fff;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.15;
@@ -510,18 +510,18 @@ a {
   justify-content: center;
   border: 4px solid #fff;
   border-radius: 50%;
-  background: #3cbeee;
+  background: #2a6f9e;
   color: #fff;
   font-size: 1.65rem;
   line-height: 1;
-  box-shadow: 0 8px 22px rgba(2, 16, 22, 0.18);
+  box-shadow: 0 8px 22px rgba(7, 43, 86, 0.18);
   transform: translate(-50%, 50%);
   cursor: pointer;
   transition: background 0.35s ease, color 0.35s ease, transform 0.2s ease;
 }
 
 .hero-next:hover {
-  background: #021016;
+  background: #072b56;
   color: #fff;
 }
 
@@ -572,8 +572,8 @@ a {
 
 .section-kicker {
   margin: 0 0 0.5rem;
-  color: #021016;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #072b56;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: calc(1.325rem + 0.9vw);
   font-weight: 500;
   line-height: 1.2;
@@ -581,8 +581,8 @@ a {
 
 .section-title {
   margin: 0 0 1rem;
-  color: #ff7a00;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #8a6420;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: calc(1.3rem + 0.6vw);
   font-weight: 700;
   line-height: 1.2;
@@ -596,8 +596,8 @@ a {
 
 .display-heading {
   margin: 0;
-  color: #021016;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #072b56;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: calc(1.425rem + 2.1vw);
   font-weight: 700;
   line-height: 1.2;
@@ -655,7 +655,7 @@ a {
 .feature-card h3 {
   margin: 0;
   color: #fff;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: calc(1.275rem + 0.3vw);
   font-weight: 500;
   line-height: 1.2;
@@ -677,7 +677,7 @@ a {
   justify-content: center;
   border: 0;
   border-radius: 50%;
-  background: #ff7a00;
+  background: #072b56;
   color: #fff;
   font-size: 1.35rem;
   line-height: 1;
@@ -686,7 +686,7 @@ a {
   cursor: pointer;
 }
 
-.carousel-btn:hover { background: #ff6a00; }
+.carousel-btn:hover { background: #04182f; }
 
 .carousel-btn--prev { left: 8px; }
 .carousel-btn--next { right: 8px; }
@@ -752,7 +752,7 @@ a {
 .chardham-card h3 {
   margin: 0;
   color: #fff;
-  font-family: "Playfair Display", Georgia, serif;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -816,20 +816,20 @@ a {
   padding: 1.35rem 1.3rem 1.2rem;
   border-radius: 16px;
   background: #fff;
-  box-shadow: 0 10px 28px rgba(2, 16, 22, 0.08);
+  box-shadow: 0 10px 28px rgba(7, 43, 86, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 34px rgba(2, 16, 22, 0.12);
+  box-shadow: 0 16px 34px rgba(7, 43, 86, 0.12);
 }
 
 .testimonial-mark {
   display: block;
   margin-bottom: 0.35rem;
-  color: #ff7a00;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #8a6420;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 3.2rem;
   line-height: 0.7;
 }
@@ -858,7 +858,7 @@ a {
   height: 42px;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: #ff7a00;
+  background: #072b56;
   color: #fff;
   font-size: 0.85rem;
   font-weight: 700;
@@ -867,22 +867,22 @@ a {
 
 .testimonial-card h3 {
   margin: 0;
-  color: #021016;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #072b56;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.15rem;
   font-weight: 600;
 }
 
 .site-footer {
   background:
-    radial-gradient(ellipse at top left, rgba(255, 122, 0, 0.14), transparent 46%),
-    #021016;
+    radial-gradient(ellipse at top left, rgba(232, 213, 163, 0.16), transparent 42%),
+    #04182f;
   color: #fff;
 }
 
 .footer-accent {
   height: 3px;
-  background: linear-gradient(90deg, #ff7a00, #ffc48a 55%, transparent);
+  background: linear-gradient(90deg, #e8d5a3, #a57d2f 55%, transparent);
 }
 
 .footer-main {
@@ -915,14 +915,14 @@ a {
 .footer-logo {
   display: inline-flex;
   align-items: center;
-  padding: 0.35rem 0.7rem 0.35rem 0.35rem;
-  border-radius: 999px;
+  padding: 0.45rem;
+  border-radius: 18px;
   background: #fff;
   line-height: 0;
 }
 
 .footer-logo img {
-  width: 188px;
+  width: 148px;
   height: auto;
 }
 
@@ -944,7 +944,7 @@ a {
 
 .contact-label {
   margin: 0 0 0.25rem;
-  color: #ff7a00;
+  color: #8a6420;
   font-weight: 700;
   line-height: 1.4;
 }
@@ -999,7 +999,7 @@ a {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  box-shadow: 0 8px 20px rgba(2, 16, 22, 0.18);
+  box-shadow: 0 8px 20px rgba(7, 43, 86, 0.18);
   transition: opacity 0.45s ease, visibility 0.45s ease, background 0.3s ease, transform 0.15s ease, box-shadow 0.15s ease;
 }
 
@@ -1011,11 +1011,11 @@ a {
 
 .float-btn--top {
   bottom: 30px;
-  background: #3cbeee;
+  background: #2a6f9e;
 }
 
 .float-btn--top:hover {
-  background: #021016;
+  background: #072b56;
 }
 
 .float-btn--whatsapp {
@@ -1052,7 +1052,7 @@ a {
 .dropdown-heading {
   margin: 0;
   padding: 0.45rem 0.75rem 0.2rem;
-  color: #ff7a00;
+  color: #8a6420;
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -1096,7 +1096,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
-  color: #021016;
+  color: #072b56;
   font-size: 0.9rem;
   font-weight: 600;
 }
@@ -1109,7 +1109,7 @@ a {
   border: 1px solid #d8d8d8;
   border-radius: 8px;
   background: #fff;
-  color: #021016;
+  color: #072b56;
   font: inherit;
 }
 
@@ -1122,7 +1122,7 @@ a {
   padding: 0.7rem 1.15rem;
   border: 0;
   border-radius: 8px;
-  background: #ff7a00;
+  background: #072b56;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
@@ -1131,11 +1131,11 @@ a {
 
 .enquiry-form button:hover,
 .text-button:hover {
-  background: #e86e00;
+  background: #04182f;
 }
 
 .text-link {
-  color: #ff7a00;
+  color: #8a6420;
   font-weight: 700;
   text-decoration: none;
 }
@@ -1161,13 +1161,13 @@ a {
   background: #fff;
   color: inherit;
   text-decoration: none;
-  box-shadow: 0 10px 28px rgba(2, 16, 22, 0.08);
+  box-shadow: 0 10px 28px rgba(7, 43, 86, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .package-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 34px rgba(2, 16, 22, 0.12);
+  box-shadow: 0 16px 34px rgba(7, 43, 86, 0.12);
 }
 
 .package-media {
@@ -1199,7 +1199,7 @@ a {
   bottom: 0.7rem;
   padding: 0.28rem 0.65rem;
   border-radius: 999px;
-  background: rgba(2, 16, 22, 0.78);
+  background: rgba(7, 43, 86, 0.78);
   color: #fff;
   font-size: 0.75rem;
   font-weight: 600;
@@ -1215,8 +1215,8 @@ a {
 
 .package-body h3 {
   margin: 0 0 0.5rem;
-  color: #021016;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #072b56;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.12rem;
   font-weight: 600;
   line-height: 1.35;
@@ -1224,7 +1224,7 @@ a {
 }
 
 .package-card:hover h3 {
-  color: #ff7a00;
+  color: #8a6420;
 }
 
 .package-places {
@@ -1239,7 +1239,7 @@ a {
 .package-places svg {
   flex-shrink: 0;
   margin-top: 0.15rem;
-  color: #ff7a00;
+  color: #8a6420;
   font-size: 0.95rem;
 }
 
@@ -1253,7 +1253,7 @@ a {
 }
 
 .package-meta {
-  color: #ff7a00;
+  color: #8a6420;
   font-size: 0.92rem;
   font-weight: 700;
 }
@@ -1313,13 +1313,13 @@ a {
   background: #fff;
   color: inherit;
   text-decoration: none;
-  box-shadow: 0 10px 28px rgba(2, 16, 22, 0.08);
+  box-shadow: 0 10px 28px rgba(7, 43, 86, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 34px rgba(2, 16, 22, 0.12);
+  box-shadow: 0 16px 34px rgba(7, 43, 86, 0.12);
 }
 
 .service-media {
@@ -1349,15 +1349,15 @@ a {
 
 .service-card h3 {
   margin: 0 0 0.45rem;
-  color: #021016;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #072b56;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.35rem;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .service-card:hover h3 {
-  color: #ff7a00;
+  color: #8a6420;
 }
 
 .service-card p {
@@ -1400,7 +1400,7 @@ a {
   min-height: 280px;
   padding: 1.25rem;
   border-radius: 20px;
-  background: linear-gradient(160deg, #fff4ea 0%, #f3fbff 100%);
+  background: linear-gradient(160deg, #f7f3ea 0%, #eef3f8 100%);
 }
 
 .about-visual img {
@@ -1413,7 +1413,7 @@ a {
 
 .about-label {
   margin: 0 0 0.35rem;
-  color: #ff7a00;
+  color: #8a6420;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -1442,7 +1442,7 @@ a {
   display: flex;
   align-items: flex-start;
   gap: 0.65rem;
-  color: #021016;
+  color: #072b56;
   font-weight: 600;
   line-height: 1.45;
 }
@@ -1450,7 +1450,7 @@ a {
 .about-points svg {
   flex-shrink: 0;
   margin-top: 0.15rem;
-  color: #ff7a00;
+  color: #8a6420;
 }
 
 .about-copy .text-button {
@@ -1476,7 +1476,7 @@ a {
   padding: 1.4rem 1.35rem 1.5rem;
   border-radius: 16px;
   background: #fff;
-  box-shadow: 0 10px 28px rgba(2, 16, 22, 0.08);
+  box-shadow: 0 10px 28px rgba(7, 43, 86, 0.08);
 }
 
 .contact-panel .section-kicker {
@@ -1512,8 +1512,8 @@ a {
   height: 42px;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: #fff4ea;
-  color: #ff7a00;
+  background: #f7f3ea;
+  color: #8a6420;
   font-size: 1.1rem;
 }
 
@@ -1535,18 +1535,18 @@ a {
 
 .contact-value {
   margin: 0.15rem 0 0;
-  color: #021016;
+  color: #072b56;
   line-height: 1.5;
 }
 
 .contact-panel a {
-  color: #021016;
+  color: #072b56;
   font-weight: 600;
   text-decoration: none;
 }
 
 .contact-panel a:hover {
-  color: #ff7a00;
+  color: #8a6420;
 }
 
 .enquiry-form {
@@ -1556,8 +1556,8 @@ a {
 
 .enquiry-form h2 {
   margin: 0;
-  color: #021016;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #072b56;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
 }
@@ -1574,8 +1574,8 @@ a {
 .enquiry-form input:focus,
 .enquiry-form textarea:focus {
   outline: none;
-  border-color: #ff7a00;
-  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.16);
+  border-color: #8a6420;
+  box-shadow: 0 0 0 3px rgba(165, 125, 47, 0.16);
 }
 
 .enquiry-form button {
@@ -1597,8 +1597,8 @@ a {
 
 .site-footer h2 {
   margin: 0 0 1rem;
-  color: #ff7a00;
-  font-family: "Playfair Display", Georgia, serif;
+  color: #e8d5a3;
+  font-family: "Outfit", ui-sans-serif, system-ui, sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
   line-height: 1.2;
@@ -1611,7 +1611,7 @@ a {
   height: 2px;
   margin-top: 0.55rem;
   border-radius: 2px;
-  background: #ff7a00;
+  background: #e8d5a3;
 }
 
 .footer-links,
@@ -1629,7 +1629,7 @@ a {
 
 .footer-links a:hover,
 .footer-links a.active {
-  color: #ff7a00;
+  color: #e8d5a3;
 }
 
 .footer-contact-list {
@@ -1651,8 +1651,8 @@ a {
   margin-top: 0.1rem;
   padding: 0.45rem;
   border-radius: 50%;
-  background: rgba(255, 122, 0, 0.2);
-  color: #ff9a3c;
+  background: rgba(232, 213, 163, 0.16);
+  color: #e8d5a3;
   font-size: 0.95rem;
   box-sizing: content-box;
 }
@@ -1668,7 +1668,7 @@ a {
 }
 
 .footer-contact-list a:hover {
-  color: #ff7a00;
+  color: #e8d5a3;
 }
 
 .footer-contact-list strong {
