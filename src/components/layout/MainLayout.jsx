@@ -5,9 +5,9 @@ import FloatingActions from './FloatingActions.jsx'
 
 export default function MainLayout() {
   return (
-    <div className="min-h-svh bg-white">
+    <div className="site-shell">
       <PrimaryHeader />
-      <main>
+      <main className="site-main">
         <Outlet />
       </main>
       <SiteFooter />

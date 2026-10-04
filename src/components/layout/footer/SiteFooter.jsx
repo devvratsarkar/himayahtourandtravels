@@ -1,13 +1,14 @@
 import { NavLink } from 'react-router-dom'
 import { FiMail, FiMapPin, FiPhone, FiUser } from 'react-icons/fi'
 import { FaWhatsapp } from 'react-icons/fa'
-import { companyBlurb, companyName, contact, serviceLinks } from '../../../data/siteContent.js'
+import { companyBlurb, companyName, contact, serviceItems } from '../../../data/siteContent.js'
 
 const quickLinks = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   { label: 'Tour Packages', href: '/packages' },
   { label: 'Testimonials', href: '/testimonials' },
+  { label: 'Career with Us', href: '/career' },
   { label: 'Contact Us', href: '/contact' },
 ]
 
@@ -36,10 +37,8 @@ export default function SiteFooter() {
           <div>
             <h2>Our Services</h2>
             <ul className="footer-links">
-              {serviceLinks.map((item) => (
-                <li key={item.href}>
-                  <NavLink to={item.href} end>{item.label}</NavLink>
-                </li>
+              {serviceItems.map((item) => (
+                <li key={item.title}>{item.title}</li>
               ))}
             </ul>
           </div>

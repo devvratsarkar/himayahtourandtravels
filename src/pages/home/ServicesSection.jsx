@@ -1,6 +1,4 @@
-import { Link } from 'react-router-dom'
-import { FiArrowRight } from 'react-icons/fi'
-import { services } from '../../data/siteContent.js'
+import { serviceItems } from '../../data/siteContent.js'
 
 export default function ServicesSection() {
   return (
@@ -14,20 +12,16 @@ export default function ServicesSection() {
           </p>
         </div>
         <div className="service-list">
-          {services.map((item) => (
-            <Link key={item.href} to={item.href} className="service-card">
+          {serviceItems.map((item) => (
+            <article key={item.title} className="service-card">
               <span className="service-media">
                 <img src={item.image} alt={item.alt} />
               </span>
               <span className="service-body">
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
-                <span className="text-link">
-                  View More
-                  <FiArrowRight />
-                </span>
               </span>
-            </Link>
+            </article>
           ))}
         </div>
       </div>
