@@ -96,6 +96,14 @@ export const contact = {
   whatsapp: 'https://api.whatsapp.com/send?phone=919622993433&text=Hello!%20I%20found%20your%20website%20and%20am%20interested%20in%20your%20packages.',
 }
 
+export const payment = {
+  payee: 'Tofail Nazir',
+  upiId: 'tofailnazir144@okaxis',
+  qrImage: '/images/himayah/payment-upi-qr.jpg',
+  upiLink: 'upi://pay?pa=tofailnazir144@okaxis&pn=Tofail%20Nazir&cu=INR',
+  whatsapp: 'https://api.whatsapp.com/send?phone=919622993433&text=Hello!%20I%20have%20made%20a%20payment%20to%20Himayah%20Tour%20And%20Travels.%20Sharing%20the%20screenshot%20and%20my%20booking%20details.',
+}
+
 export const companyBlurb =
   'Himayah Tour And Travels is a renowned tour operator specializing in unforgettable holiday experiences across India, with customized tours to Srinagar and other favourite destinations.'
 

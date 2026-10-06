@@ -9,6 +9,7 @@ const quickLinks = [
   { label: 'Tour Packages', href: '/packages' },
   { label: 'Testimonials', href: '/testimonials' },
   { label: 'Career with Us', href: '/career' },
+  { label: 'Payment', href: '/payment' },
   { label: 'Contact Us', href: '/contact' },
 ]
 

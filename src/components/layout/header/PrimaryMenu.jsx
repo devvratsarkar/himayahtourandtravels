@@ -65,6 +65,9 @@ export default function PrimaryMenu({ open, onNavigate }) {
         <NavLink to="/testimonials" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
           Testimonials
         </NavLink>
+        <NavLink to="/payment" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
+          Payment
+        </NavLink>
         <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`} onClick={onNavigate}>
           Contact Us
         </NavLink>

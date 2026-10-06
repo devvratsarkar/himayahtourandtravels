@@ -7,6 +7,7 @@ import CareerPage from '../pages/inner/CareerPage.jsx'
 import PackageListPage from '../pages/inner/PackageListPage.jsx'
 import PackageDetailPage from '../pages/inner/PackageDetailPage.jsx'
 import CollectionPage from '../pages/inner/CollectionPage.jsx'
+import PaymentPage from '../pages/inner/PaymentPage.jsx'
 import { themes } from '../data/packages.js'
 
 export const RouterData = [
@@ -18,6 +19,7 @@ export const RouterData = [
       { path: '/contact', element: <ContactPage /> },
       { path: '/testimonials', element: <TestimonialsPage /> },
       { path: '/career', element: <CareerPage /> },
+      { path: '/payment', element: <PaymentPage /> },
       { path: '/packages', element: <PackageListPage /> },
       ...themes.map((theme) => ({
         path: theme.href,
