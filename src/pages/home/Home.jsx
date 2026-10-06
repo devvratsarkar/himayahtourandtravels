@@ -20,7 +20,7 @@ export default function HomePage() {
       <CardCarousel
         eyebrow="Packages by Destination"
         title="Explore Kashmir"
-        lead="Gulmarg, Pahalgam, Srinagar, Sonamarg, and Budgam."
+        lead="Kashmir, Srinagar, Gulmarg, Pahalgam, Sonamarg, and Budgam."
         items={destinationCards}
       />
       <ServicesSection />

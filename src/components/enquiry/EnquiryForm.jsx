@@ -21,7 +21,7 @@ export default function EnquiryForm({ title = 'Quick Enquiry', note, presetMessa
   return (
     <form className="enquiry-form" onSubmit={submit}>
       <h2>{title}</h2>
-      <p className="enquiry-note">{note || 'Share a few details and we will reply with a price on request.'}</p>
+      <p className="enquiry-note">{note || 'Share a few details and we will reply with a quotation for your dates.'}</p>
       {sent ? <p className="enquiry-thanks">{enquiryThanks}</p> : null}
       <div className="enquiry-row">
         <label>

@@ -4,7 +4,7 @@ import { tripPackages } from '../../data/siteContent.js'
 import PackageCard from '../../components/packages/PackageCard.jsx'
 
 export default function PlanYourTrip() {
-  const featured = tripPackages.slice(0, 4)
+  const featured = tripPackages
 
   return (
     <section className="band band--trips">
@@ -13,7 +13,7 @@ export default function PlanYourTrip() {
           <h2 className="section-kicker">Featured Packages</h2>
           <h3 className="section-title">Kashmir Holidays</h3>
           <p className="section-lead">
-            Srinagar, Pahalgam, Gulmarg, Sonamarg, and Doodhpathri. Every featured holiday is priced on request.
+            Couple, honeymoon, and family holidays across Srinagar, Gulmarg, Pahalgam, and Sonamarg.
           </p>
         </div>
 

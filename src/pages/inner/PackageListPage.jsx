@@ -14,7 +14,7 @@ export default function PackageListPage() {
       <PageHero
         kicker="Kashmir holidays"
         title="Tour Packages"
-        lead="Listed here are exclusive tour packages customized for our clients. Glance through them and plan a memorable trip with Himayah Tour And Travels. Every package is priced on request unless a rate is shown."
+        lead="Listed here are exclusive tour packages customized for our clients. Glance through them and plan a memorable trip with Himayah Tour And Travels. Prices shown are approximate and final quotes depend on your travel dates."
         crumbs={[{ label: 'Tour Packages' }]}
       />
       <section className="band">
