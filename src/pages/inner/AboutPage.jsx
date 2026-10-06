@@ -21,7 +21,7 @@ export default function AboutPage() {
       <PageHero
         kicker="About us"
         title="Himayah Tour And Travels"
-        lead="A Srinagar tour operator for holidays across Kashmir and selected Himachal destinations."
+        lead="A Srinagar tour operator for holidays across Kashmir."
         crumbs={[{ label: 'About Us' }]}
       />
       <section className="band">

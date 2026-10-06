@@ -19,8 +19,8 @@ export default function HomePage() {
       <PlanYourTrip />
       <CardCarousel
         eyebrow="Packages by Destination"
-        title="Kashmir and Himachal"
-        lead="Gulmarg, Pahalgam, Srinagar, Sonamarg, Budgam, and Parwanoo."
+        title="Explore Kashmir"
+        lead="Gulmarg, Pahalgam, Srinagar, Sonamarg, and Budgam."
         items={destinationCards}
       />
       <ServicesSection />

@@ -6,10 +6,10 @@ export const companyName = 'Himayah Tour And Travels'
 export const heroKicker = 'Hotel Booking in Srinagar'
 
 export const heroSlides = [
-  { image: '/images/himayah/himachal.jpg', alt: 'Himachal hills', title: 'Himachal Tour' },
   { image: '/images/himayah/kashmir.jpg', alt: 'Kashmir valley', title: 'Kashmir Tour' },
-  { image: '/images/himayah/shimla.jpg', alt: 'Shimla', title: 'Shimla Tour' },
-  { image: '/images/himayah/kullu.jpg', alt: 'Kullu valley', title: 'Kullu Tour' },
+  { image: '/images/himayah/gulmarg.jpg', alt: 'Gulmarg', title: 'Gulmarg Tour' },
+  { image: '/images/himayah/pahalgam.jpg', alt: 'Pahalgam', title: 'Pahalgam Tour' },
+  { image: '/images/himayah/sonamarg.jpg', alt: 'Sonamarg', title: 'Sonamarg Tour' },
   { image: '/images/himayah/srinagar-banner.jpg', alt: 'Srinagar', title: 'Srinagar Tour' },
 ]
 
@@ -42,7 +42,7 @@ export const serviceItems = [
     title: 'Hotel Booking',
     image: '/images/himayah/hotel.jpg',
     alt: 'Hotel booking in Srinagar',
-    text: 'Himayah Tour And Travels is well established for hotel booking in Srinagar, and also arranges stays in Gulmarg, Pahalgam, Sonamarg, and Himachal to match your itinerary and budget.',
+    text: 'Himayah Tour And Travels is well established for hotel booking in Srinagar, and also arranges stays in Gulmarg, Pahalgam, and Sonamarg to match your itinerary and budget.',
   },
 ]
 
@@ -90,7 +90,7 @@ export const testimonials = [
 export const contact = {
   person: 'Tofail Ahmad',
   address: 'Srinagar, Jammu & Kashmir - 959654, India',
-  email: 'tofailnazir144@gmail.com',
+  email: 'himayahtourandtravels@gmail.com',
   phone: '+91 96229 93433',
   phoneHref: 'tel:+919622993433',
   whatsapp: 'https://api.whatsapp.com/send?phone=919622993433&text=Hello!%20I%20found%20your%20website%20and%20am%20interested%20in%20your%20packages.',
